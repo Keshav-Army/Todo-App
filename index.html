@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center class="wrapper">
+        <div class="main">
+
+            <!-- TOP BORDER -->
+            <div height="8px" style="background-color: #171a1b;font-size: 8px;">-</div>
+            <h1>TODO APP</h1>
+
+            <div style="width: 29em;">
+                <div class="grid-container">
+                    <input id="userInput" type="text" placeholder="Enter Todo here" required>
+
+                    <input type="date" name="date" id="todo-date" required>
+
+                    <button id="btn-add" type="button" onclick="addTodo()">Add</button>
+                </div>
+
+                <!-- We will insert all Todo Items in this Contianer -->
+                <div class="todo-container grid-container"></div>
+            </div>
+
+        </div>
+    </center>
+    <script src="script.js"></script>
+</body>
+
+</html>
